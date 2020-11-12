@@ -1,0 +1,14 @@
+--- abduco.c.orig	Tue Dec 24 20:47:13 2019
++++ abduco.c	Tue Dec 24 20:49:45 2019
+@@ -44,6 +44,11 @@
+ # include <util.h>
+ #endif
+ 
++/* Needed for SIGWINCH */
++#ifdef __OpenBSD__
++#include <sys/signal.h>
++#endif
++
+ #if defined CTRL && defined _AIX
+   #undef CTRL
+ #endif

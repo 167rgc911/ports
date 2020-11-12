@@ -1,0 +1,18 @@
+--- Makefile.orig	Tue Dec 24 20:47:05 2019
++++ Makefile	Tue Dec 24 20:47:37 2019
+@@ -16,13 +16,13 @@ config.h:
+ 
+ .c.o:
+ 	@echo CC $<
+-	@${CC} -c ${CFLAGS} $<
++	${CC} -c ${CFLAGS} $<
+ 
+ ${OBJ}: config.h config.mk
+ 
+ abduco: ${OBJ}
+ 	@echo CC -o $@
+-	@${CC} -o $@ ${OBJ} ${LDFLAGS}
++	${CC} -o $@ ${OBJ} ${LDFLAGS}
+ 
+ debug: clean
+ 	@make CFLAGS='${DEBUG_CFLAGS}'

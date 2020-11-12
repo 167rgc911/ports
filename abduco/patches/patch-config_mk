@@ -1,0 +1,19 @@
+--- config.mk.orig	Tue Dec 24 20:47:22 2019
++++ config.mk	Tue Dec 24 20:48:21 2019
+@@ -3,13 +3,13 @@ VERSION = 0.6
+ 
+ # Customize below to fit your system
+ 
+-PREFIX ?= /usr/local
+-MANPREFIX = ${PREFIX}/share/man
++#PREFIX ?= /usr/local
++#MANPREFIX = ${PREFIX}/share/man
+ 
+ INCS = -I.
+ LIBS = -lc -lutil
+ 
+-CPPFLAGS = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
++#CPPFLAGS = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
+ CFLAGS += -std=c99 -pedantic -Wall ${INCS} -DVERSION=\"${VERSION}\" -DNDEBUG ${CPPFLAGS}
+ LDFLAGS += ${LIBS}
+ 
