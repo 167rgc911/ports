@@ -2,7 +2,8 @@
 
 COMMENT=		provides session management
 
-DISTNAME=		abduco-0.6
+V=				0.6
+DISTNAME=		abduco-${V}
 CATEGORIES=		misc
 REVISION=		0
 
