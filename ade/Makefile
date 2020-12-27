@@ -3,7 +3,7 @@
 COMMENT=		graph construction, manipulation and processing framework
 
 V=              0.1.1f
-PKGNAME=        ade
+PKGNAME=        ade-${V}
 
 GH_ACCOUNT=     opencv
 GH_PROJECT=     ade
